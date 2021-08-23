@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    padding-bottom: 130px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.container {
+    max-width: 1410px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    padding-top: 51px;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_navigation {
+    width: 430px;
+}
+
+.main_section {
+    position: relative;
+}
+
+.header_navigation-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_title {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.main_title span {
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.main_content {
+    margin-top: 150px;
+}
+
+.main_text span:first-child{
+    display: inline-block;
+    color: #9C9C9C;
+}
+
+.main_text {
+    display: flex;
+    max-width: 620px;
+    margin-top: 35px;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.main_text-about {
+    display: inline-block;
+    margin-left: 15px;
+    color: #000; 
+}
+
+.main_social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 95px;
+}
+
+.main_social-left--link + .main_social-left--link {
+    margin-left: 25px;
+}
+
+
+
+/* WHAT I DO SECTION ========================== */
+
+.whatido {
+    margin-top: 115px;
+}
+
+.whatido_title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.whatido_inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.whatido_item {
+    width: 317px;
+}
+
+.whatido_title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;    
+}
+
+.whatido_text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px;
+}
+
+.whatido_item-title {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+}
+
+.whatido_text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+
+
+/* SKILLS SECTION =================== */
+
+.skills {
+    margin-top: 117px;
+}
+
+.skills_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.skills_item {
+    width: 414px;
+    height: 421px;
+    background: #9C9C9C;
+    border-radius: 21px;
+    margin-bottom: 80px;
+    padding: 43px 50px;
+}
+
+.skills_item-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.skills_item-text {
+    margin-top: 46px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.skills_instruments {
+    display: flex;
+    margin-top: 126px;
+}
+
+.skills_instruments-item {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+}
+
+.skills_instruments-item + .skills_instruments-item {
+    margin-left: 94px;
+}
+
+.skills_line {
+    max-width: 1080px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 33px;
+}
+
+
+/* portfolio section ======================= */
+
+.portfolio {
+    margin-top: 130px;
+}
+
+.portfolio_inner {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio_item {
+    width: 457px;
+    height: 325px;
+    background-color: purple;
+    border-radius: 21px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    
+}
+
+.portfolio_more {
+    cursor: pointer;
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 374px;
+    height: 93px;
+
+    background: #9C9C9C;
+    border-radius: 9px;
+    border: none;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+}
+
+
+
+/* about me section ============================*/
+
+.aboutMe {
+    margin-top: 224px;
+}
+
+.aboutMe h2 {
+    width: 190px;
+}
+
+.aboutMe_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe_some-text {
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    max-width: 1154px;
+}
+
+.aboutMe_bottom {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.aboutMe_bottom-text {
+    text-align: top;
+    display: flex;
+    
+}
+
+.whatido_title-bottom {
+    width: 120px !important;
+}
+
+
+
+
+/* contact section =========================== */
+
+.contact {
+    margin-top: 250px;
+}
+
+.contact input {
+    border: none;
+    display: block;
+    min-height: 42px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 0;
+    width: 550px;
+    padding-top: 21px;
+    font-size: 36px;
+    line-height: 42px;
+    padding-left: 5px;
+}
+
+.contact_form {
+    margin-top: 100px;
+}
+
+.contact input{
+    outline: 0 !important;
+    outline-offset: 0;
+    margin-bottom: 48px;
+}
+
+.contact input:nth-child(2) {
+    margin-bottom: 173px;
+}
+
+.contact input::placeholder {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #9C9C9C;
+
+}
+
+.contact_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contact_letsWork {
+    width: 710px;
+}
+
+.contact_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 30px;
+}
+
+.contact_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.contact .main_social-left {
+    margin-top: 30px;
+}
+
+.contact_send-btn {
+    width: 192px;
+    height: 50px;
+
+    background: #9C9C9C;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 27px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin-right: 64px;
+}
+
+.contact_add-btn {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.hamburger_menu {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background: white;
+    z-index: 1001;
+
+}
+
+.hamburger_menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger_menu li {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.hamburger_btn {
+    display: none;
+    z-index: 1002;
+}
+
+.hide {
+    display: none;
+    
+}
+
+/* .hide_hamb {
+    left: -100%;
+} */
