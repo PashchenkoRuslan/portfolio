@@ -114,4 +114,15 @@
     .contact_send-btn {
         margin-bottom: 25px;
     }
+
+    .main_social-left--link + .main_social-left--link {
+        margin-left: 7px;
+    }
+
+
+    .portfolio_more {
+        width: 313px;
+        font-size: 28px;
+    }
 }
+

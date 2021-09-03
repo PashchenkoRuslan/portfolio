@@ -44,6 +44,11 @@ const ElementsOfHtml = {
     hamburgerBtn: document.querySelector('.hamburger_btn'),
     navigationItem: document.querySelectorAll('.hamb_nav-item'),
     headerNavigationInner: document.querySelector('.hamburger_menu'),
+
+    portLink: document.querySelectorAll('.portfolio_item-link'),
+    portInner: document.querySelector('.portfolio_inner'),
+    portImg: document.querySelectorAll('.portfolio_item-img'),
+    showPort: document.querySelectorAll('.showPort'),
 };
 
 let i = 0, l = 0;
@@ -63,3 +68,24 @@ ElementsOfHtml.headerNavigationInner.addEventListener('click', function(event) {
 
 });
 
+// event of mouseover
+
+// for (let i = 0; i < portLink.length; i++) {
+
+// }
+ElementsOfHtml.portInner.addEventListener('mouseover', function(event) {
+
+    // if (event.target.className === 'portfolio_item-img') {
+    //     event.target.classList.toggle('hide');
+    // }
+
+    for (let i = 0; i < ElementsOfHtml.portLink; i++) {
+        if (event.targer.tagName === ElementsOfHtml.portImg[i]) {
+            ElementsOfHtml.showPort[i].classList.toggle('hide');
+        }
+    }
+  
+})
+
+
+// portfolio_item-img

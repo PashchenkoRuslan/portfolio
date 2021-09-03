@@ -260,16 +260,17 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    transition: all .3s ease;
 }
 
 .portfolio_item {
     width: 457px;
     height: 325px;
-    background-color: purple;
+    background-color: grey;
     border-radius: 21px;
     margin-bottom: 15px;
     cursor: pointer;
-    
+    transition: all .3s ease;
 }
 
 .portfolio_more {
@@ -470,6 +471,36 @@ a {
     
 }
 
+.portfolio_item img {
+    width: 100%;
+
+}
+
+.portfolio_item img:hover {
+    opacity: 90%;
+}
+
 /* .hide_hamb {
     left: -100%;
 } */
+
+.portfolio_inner a img{
+    width: 100%;
+    height: 100%;
+}
+
+.showPort {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    background-color: rgb(117, 117, 117);
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.portfolio_inner a {
+    position: relative;
+}
