@@ -145,7 +145,7 @@ a {
 
 .whatido_title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 56px;
 }
 
@@ -279,14 +279,14 @@ a {
     display: block;
     margin: 0 auto;
     margin-top: 15px;
-    width: 374px;
-    height: 93px;
+    width: 154px;
+    height: 53px;
 
     background: #9C9C9C;
     border-radius: 9px;
     border: none;
     font-weight: bold;
-    font-size: 37px;
+    font-size: 18px;
     line-height: 43px;
 
     color: #FFFFFF;
@@ -313,7 +313,7 @@ a {
     margin-top: 60px;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 42px;
 
     max-width: 1154px;
@@ -403,7 +403,7 @@ a {
 .contact_text {
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 42px;
 }
 
@@ -503,4 +503,9 @@ a {
 
 .portfolio_inner a {
     position: relative;
+}
+
+.blacktheme {
+    background: #000000;
+    color: #fff;
 }
