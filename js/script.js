@@ -49,6 +49,8 @@ const ElementsOfHtml = {
     portInner: document.querySelector('.portfolio_inner'),
     portImg: document.querySelectorAll('.portfolio_item-img'),
     showPort: document.querySelectorAll('.showPort'),
+    seeMore: document.querySelector('.portfolio_more'),
+    lightBlack: document.querySelector('.light-black'),
 };
 
 let i = 0, l = 0;
@@ -85,7 +87,25 @@ ElementsOfHtml.portInner.addEventListener('mouseover', function(event) {
         }
     }
   
-})
+});
+
+
+// если у меня меньше 3 работ, то алертать
+ElementsOfHtml.seeMore.addEventListener('click', function() {
+    console.log('hello');
+    if (ElementsOfHtml.portLink.length <= 3) {
+        alert('at the moment this is all there is');
+    } 
+});
+
+
+// кнопка смены цвета сайта
+ElementsOfHtml.lightBlack.addEventListener('click',function(){
+    document.body.classList.toggle('blacktheme');
+
+});
+
+
 
 
 // portfolio_item-img
