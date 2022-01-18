@@ -14027,7 +14027,7 @@ window.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   let modalState = {};
-  let deadline = '2022-12-31';
+  let deadline = '2022-06-31';
   Object(_modules_changeModalState__WEBPACK_IMPORTED_MODULE_4__["default"])(modalState);
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_2__["default"])('.glazing_slider', '.glazing_block', '.glazing_content', 'active');
@@ -14242,6 +14242,10 @@ const images = () => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
 const modals = (a, b, c) => {
   function bindModal(triggerSelecetor, modalSelector, closeSelector) {
     let closeClickOverlay = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
@@ -14249,6 +14253,7 @@ const modals = (a, b, c) => {
           modal = document.querySelector(modalSelector),
           close = document.querySelector(closeSelector),
           windows = document.querySelectorAll('[data-modal]');
+    scroll = caclScroll();
     trigger.forEach(item => {
       item.addEventListener('click', e => {
         if (e.target) {
@@ -14260,25 +14265,16 @@ const modals = (a, b, c) => {
         });
         modal.style.display = "block";
         document.body.style.overflow = "hidden";
+        document.body.style.marginRight = `${scroll}px`;
       });
     });
     close.addEventListener('click', () => {
-      // if(modal.hasAttribute('data-withinputs')) {
-      //     const inputs = modal.querySelectorAll('input');
-      //     let flag = true
-      //     inputs.forEach(element => {
-      //         if(!flag || element.value === '') flag = false;
-      //     });
-      //     if (!flag) {
-      //         alert('введите данные!');
-      //     } else {
-      //     }
-      // }
       windows.forEach(item => {
         item.style.display = 'none';
       });
       modal.style.display = "none";
       document.body.style.overflow = "";
+      document.body.style.marginRight = `0px`;
     });
     modal.addEventListener('click', e => {
       if (e.target === modal && closeClickOverlay) {
@@ -14287,10 +14283,26 @@ const modals = (a, b, c) => {
         });
         modal.style.display = "none";
         document.body.style.overflow = "";
+        document.body.style.marginRight = `0px`;
       }
     });
   }
 
+  ;
+
+  function caclScroll() {
+    let div = document.createElement('div');
+    div.style.width = '50px';
+    div.style.height = '50px';
+    div.style.overflowY = 'scroll';
+    div.style.visibility = 'hidden';
+    document.body.appendChild(div);
+    let scrollWidth = div.offsetWidth - div.clientWidth;
+    div.remove();
+    return scrollWidth;
+  }
+
+  ;
   bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
   bindModal('.phone_link', '.popup_engineer', '.popup_engineer .popup_close');
   bindModal('.popup_calc_btn', '.popup_calc', '.popup_calc_close');
